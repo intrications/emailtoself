@@ -1,0 +1,89 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Help" >
+    </PreferenceCategory>
+
+    <Preference
+        android:key="help"
+        android:summary="Click here for instructions"
+        android:title="How To Use Email To Self" >
+    </Preference>
+    <!--<Preference-->
+        <!--android:key="syncPrefs"-->
+        <!--android:summary="Connected/Not Connected"-->
+        <!--android:title="Sync settings to Google Drive" >-->
+    <!--</Preference>-->
+
+    <PreferenceCategory android:title="Preferences" >
+    </PreferenceCategory>
+
+    <Preference
+        android:key="chooseEmailApp"
+        android:summary="Select which app you use to send emails"
+        android:title="Choose Email App" />
+
+    <EditTextPreference
+        android:dialogMessage="Enter multiple addresses separated by commas to be given a choice when sending email."
+        android:inputType="textEmailAddress"
+        android:key="email"
+        android:positiveButtonText="Save"
+        android:title="Set Email Address(es)" >
+    </EditTextPreference>
+
+    <CheckBoxPreference
+        android:key="alphaEmail"
+        android:title="Sort Email Addresses Alphabetically" >
+    </CheckBoxPreference>
+
+    <EditTextPreference
+        android:dialogMessage="Separate with commas. Tip: Set filters in your email client to filter based on the label."
+        android:dialogTitle="Set labels for subject."
+        android:key="prefix"
+        android:positiveButtonText="Save"
+        android:title="Set Labels (Optional)" >
+    </EditTextPreference>
+
+    <CheckBoxPreference
+        android:key="alphaPrefix"
+        android:title="Sort Labels Alphabetically" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="blankPrefix"
+        android:title="Add Option Of No Label" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="squareBrackets"
+        android:summary="Add square brackets around label in email subject?"
+        android:title="Square Brackets?" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="titleDownload"
+        android:summary="Disable if you have a slow connection"
+        android:title="Retrieve Webpage Title" >
+    </CheckBoxPreference>
+
+    <Preference
+        android:key="removePrefsFromLauncher"
+        android:summary="Add/remove setup icon"
+        android:title="Remove Setup Icon From Launcher" >
+    </Preference>
+    <Preference
+        android:key="addQuickEmailToLauncher"
+        android:summary="Add/remove icon to open a blank email to self for quick notes"
+        android:title="Add Email Note To Self Icon" >
+    </Preference>
+    <!--
+        <CheckBoxPreference android:key="gmailMode" android:title="GMail compatibility" 
+		android:summary="Adds ability to add Gmail label to email address"></CheckBoxPreference>
+    -->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="fakeBrowser"
+        android:summary="Enables quicker emailing of URLs by pretending to be a browser"
+        android:title="Appear As Fake Browser" >
+    </CheckBoxPreference>
+
+</PreferenceScreen>

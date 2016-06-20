@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="cancel">Cancel</string>
+    <string name="webpage_title_could_not_be_retrieved">Webpage Title Could Not Be Retrieved</string>
+    <string name="retrieving_webpage_title">Retrieving Webpage Title…</string>
+    <string name="app_name">Email To Self</string>
+    <string name="app_name_preferences">Email To Self Setup</string>
+    <string name="remove_quick_notes_prefs">Remove Email Note To Self Icon</string>
+
+</resources>
