@@ -253,7 +253,7 @@ public class EditPreferencesFragment extends PreferenceFragment implements
 					@Override
 					public boolean onPreferenceChange(Preference preference,
 							Object newValue) {
-						if ((Boolean) newValue == Boolean.TRUE) {
+						if (newValue == Boolean.TRUE) {
 							packageManager
 									.setComponentEnabledSetting(
 											new ComponentName(
